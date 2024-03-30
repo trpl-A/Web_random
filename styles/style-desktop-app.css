@@ -1,0 +1,200 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-top {
+  border-radius: 0;
+}
+.shadow-sm {
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+}
+/* ------------------ */
+
+body {
+  overflow-x: hidden;
+}
+/* ------------------ */
+
+ /* modal */
+.modal-content {
+  /* min-height: 500px; */
+  background-color: black;
+}
+/* .modal-content img {
+  height:100%; 
+} */
+
+.modal-footer {
+  padding:10px; 
+}
+.modal-footer .center{
+  width:100%; 
+}
+/* ------------------ */
+
+/* NAVBAR */
+.navbar {
+  background-color: black !important;
+}
+
+.dropdown-menu {
+  background-color: coral;
+}
+
+.dropdown-item {
+  color: black;
+}
+.dropdown-item:hover {
+  background: rgba(21, 3, 82);
+  color: white;
+}
+
+.nav-link {
+  color: white; 
+  width:fit-content;
+}
+.nav-link:hover {
+  color: coral; 
+}
+
+.navbar-nav .nav-link.show {
+  color:white;
+}
+
+.navbar-toggler{
+  border:1px solid rgb(70, 70, 70); 
+}
+
+/* .nav-item {
+  color: white;
+} */
+/* ------------------ */
+
+/* HEADER */
+header {
+  height: 70vh;
+  padding: 10px;
+  /* background-color: black; */
+
+  background-image: url("./images/bg1.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  transition: 400ms ease-out;
+}
+
+header h1 {
+  font-size: 50px;
+  font-weight: 100;
+  padding: 10px;
+  color: white;
+  text-align: center;
+
+  transition: 400ms ease-out;
+}
+/* ------------------ */
+
+section {
+  height: 100vh;
+  background-color: blue;
+  color: white;
+  font-weight: 100;
+}
+section h2 {
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+#intro {
+  background-color: rgb(201, 24, 68);
+}
+
+#intro div{
+    padding:20px; 
+}
+
+#intro h2{
+  text-align: left;
+  padding:10px 0;
+}
+/* ------------------ */
+
+#screenshots {
+  background-color: rgb(39, 0, 39);
+  /* margin-bottom:20px; */
+  /* border-bottom: 1px solid white; */
+  /* background-color: rgb(201, 24, 68); */
+}
+#screenshots .col {
+  max-width: 400px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 400ms ease-in;
+}
+#screenshots .col:hover {
+  opacity: 1;
+  transform: scale(0.9);
+}
+.card-img-top {
+  border-radius: 25px;
+  border: 1px solid white;
+}
+/* ------------------ */
+
+#download {
+  background-color: rgb(83, 5, 60);
+  color: pink;
+}
+
+#download img{
+    transition: 500ms ease-out; 
+}
+#download img:hover{
+    transform: scale(1.1) rotateZ(-10deg);
+}
+/* ------------------ */
+
+/* FOOTER */
+footer {
+  background-color: black;
+  padding: 10px;
+}
+
+footer a {
+  padding:10px; 
+  color: rgb(206, 44, 120);
+  /* color: rgb(136, 9, 98); */
+  /* transition: 400ms ease-in; */
+}
+footer a:hover {
+  color: coral;
+}
+/* ------------------ */
+
+
+/* MEDIA QUERIES */
+@media (max-width:1000px) {
+  header {
+    height: 50vh;
+  }
+
+  header h1{
+    font-size:40px; 
+  }
+  
+  /* .modal-content {
+    height:initial;
+  }
+
+  .modal-content img {
+    height:300px; 
+  } */
+}

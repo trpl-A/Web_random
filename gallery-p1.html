@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<title>Gallery | Page 1</title>
+
+        <!-- favicon -->
+        <link rel="icon" type="icon" href="./styles/favicon/icons8-help-50.png">
+
+       
+        <!-- from template -->
+        <!-- =============================================== -->
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+       
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        
+        <!-- for overlay navbar -->
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+        <!-- =============================================== -->
+
+        
+        <!-- BOOTSTRAP -->
+        <!-- =============================================== -->
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+        <!-- given -->
+        <script src="./styles/assets/js/color-modes.js"></script>
+        <script src="./styles/assets/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <link href="./styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- =============================================== -->
+
+        <!-- my scripts -->
+        <script src="./scripts/modal.js"></script>
+        <script src="./scripts/sound.js"></script>
+        <script src="./scripts/app.js"></script>
+        <!-- ----------------------->
+
+        <!-- my styles -->
+        <link rel="stylesheet" href="./styles/myStyle/myStyle-main.css">
+        <link rel="stylesheet" href="./styles/myStyle/myStyle-classes.css">
+        <!-- <link rel="stylesheet" href="./styles/myboot/myBoots-modal.css"> -->
+        <link rel="stylesheet" href="./styles/main.css">
+        
+        <!-- gallery -->
+        <link rel="stylesheet" href="styles/style-gallery.css">
+        <style>
+            footer a{
+                color: purple;
+                font-weight:500;
+                text-transform: none;
+            }
+            footer a:hover{
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- nav overlay -->
+        <section class="overlay-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html" onmouseover="playSound()">Home</a>
+                            </li>
+                            <li>
+                                <a href="gallery-p2.html" onmouseover="playSound()">Gallery next...</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page1.html" onmouseover="playSound()" >Article #1</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page2.html" onmouseover="playSound()">Article #2</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page3.html" onmouseover="playSound()"">Article #3</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page4.html" onmouseover="playSound()"">Article #4</a>
+                            </li>
+                            <li>
+                                <a href="desktop-app.html" onmouseover="playSound()">Desktop App</a>
+                            </li>
+                        </ul>
+
+                        <p>Click 'F11' to toggle full-screen mode</p>
+                        <a id="acknowledgement" href="acknowledgement.html" target="_blank" onmouseover="playSound1()">View resources and tools used</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav>
+            <div class="menu-icon">
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <header class="center">
+            <h1>Gallery</h1>
+        </header>
+
+
+        <!-- MAIN -->
+        <!-- <main id="main-gallery"> -->
+        <main id="main-gallery" class="center">
+            <!-- main content; images -->
+            <div class="album py-3 bg-body-tertiary">
+                <div class="container">
+                    <!-- group1 -->
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <!-- row1 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top"
+                                src="./styles/images/for_gallery/page1/w3 (1).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (2).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (3).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (4).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- row2 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top"
+                                src="./styles/images/for_gallery/page1/w3 (5).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (7).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (6).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (8).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- row3 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top"
+                                src="./styles/images/for_gallery/w2/w2 (1).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (9).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (10).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page1/w3 (11).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <!-- end--------------------------- -->
+                    </div>
+
+                    <div class="center btn-container">
+                        <button id="showBtn" class="btn-style1" onclick="showGallery()">Show more</button>
+                    </div>
+                    <!-- group2 -->
+                    <div id="gallery-hidden" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                            <!-- row1 -->
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top"
+                                    src="./styles/images/for_gallery/w2/w2 (8).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (14).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (13).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/w2/w2 (2).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- row2 -->
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top"
+                                    src="./styles/images/for_gallery/page1/w3 (24).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (19).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (15).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (20).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+
+
+                            <!-- row3-->
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top"
+                                    src="./styles/images/for_gallery/page1/w3 (18).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (17).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (22).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" 
+                                    src="./styles/images/for_gallery/page1/w3 (23).webp" 
+                                    alt="">
+                                </div>
+                            </div>
+                            <!-- end--------------------------- -->
+                    </div>
+
+                    <div class="center btn-container">
+                        <button type="button" id="showBtn1" class="btn-style1" onclick="showGallery1()">Show more</button>
+                    </div>
+                    <!-- group3 -->
+                    <div id="gallery-hidden1" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <!-- row1 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top"
+                                src="./styles/images/for_gallery/w2/w2 (3).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (25).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (26).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (27).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- row2 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top"
+                                src="./styles/images/for_gallery/w2/w2 (4).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (28).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (29).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (30).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- row3-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top"
+                                src="./styles/images/for_gallery/page2/w3 (31).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (32).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/w2/w2 (6).webp" 
+                                alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" 
+                                src="./styles/images/for_gallery/page2/w3 (33).webp" 
+                                alt="">
+                            </div>
+                        </div>
+                        <!-- end--------------------------- -->
+                    </div>
+
+                    <!-- link to next page -->
+                    <div class="center btn-container">
+                        <a href="gallery-p2.html" id="next-page-btn" class="btn-style1">Next page</a>
+                    </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p> 
+                <a href="https://github.com/trpl-A" target="_blank">trpl-A</a>
+                &copy; 2024
+            </p>
+        </footer>
+    </body>
+</html>

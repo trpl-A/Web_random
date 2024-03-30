@@ -1,0 +1,161 @@
+
+header{
+    height:100vh;
+    transition: 400ms ease;
+
+    /* background-image: url("./images/Untitled-2\ -\ Copy.png"); */
+    background-image: url("./images/g1-cover-main.webp");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1{
+    font-weight: 100;
+    font-size:60px; 
+}
+/* ------------------- */
+
+nav{
+    padding: 0; 
+    position: fixed;
+}
+/* ------------------- */
+
+main{
+    background-color: black;
+}
+
+main #gallery-hidden, 
+#gallery-hidden1, 
+#showBtn1, 
+#next-page-btn{
+    display: none;
+}
+/* -------------------- */
+
+.album{
+    /* background-color: coral !important; */
+    /* background:  rgba(62, 2, 91, 0.3) !important; */
+    background-color: black !important;
+    min-height: 100vh;
+    transition: 200ms ease;
+}
+
+.col{
+    /* padding:10px; */
+    padding:5px;
+    border-radius:0; 
+}
+/* -------------------- */
+
+/* so that images have less space around them */
+/* also use my 'center' class in the 'main' tag */
+.album{
+    width: 100%;
+}
+.container {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row{
+    width:100vw; 
+}
+/* -------------------- */
+
+/* buttons */
+#main-gallery .btn-style1 {
+    --color1:coral;
+
+    border-radius: 20px;
+    margin: 10px 10px;
+    background-color: transparent;
+
+    border: 2px solid var(--color1);
+    color: var(--color1);
+}
+#main-gallery .btn-style1:hover{
+    border: 2px solid var(--color1);
+    background-color: var(--color1);
+    color: black;
+}
+
+/* button to show more images */
+.btn-container{
+    width:100vw;
+}
+
+/* button{
+    color: coral;
+    border-color: coral;
+    margin:10px 0; 
+}
+button:hover{
+    background-color: coral;
+    color:black; 
+} */
+
+/* #showBtn{
+    color: coral;
+    border-color: coral;
+    margin:10px 0; 
+}
+#showBtn:hover{
+    background-color: coral;
+    color:black; 
+} */
+/* -------------------- */
+
+.shadow-sm {
+    box-shadow: none;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.album .card{
+    transition:500ms ease;
+    cursor:pointer; 
+    border:0;
+    /* border-radius:40px;  */
+    opacity: 0.5;
+}
+.album .card:hover{
+    opacity: 1;
+    transform: scale(0.98);
+}
+/* ------------------- */
+
+/* FOOTER */
+footer {
+    color:white; 
+    background: coral !important;
+    /* background: rgba(21, 3, 82, 0.38) !important; */
+/* padding:10px;  */
+
+}
+
+/* MEDIA QUESRIES */
+/* ------------------- */
+@media (min-width:1200px) {
+    img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width: 1000px) {
+    header{
+        background-image: url("./images/g1-cover-secondary.webp");
+        background-position: left;
+    }
+}
+@media (max-width: 500px) {
+    .col{
+        padding:10px;
+    }
+}
+/* ------------------- */

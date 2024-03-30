@@ -1,0 +1,216 @@
+/* stylelint-disable stylistic/selector-list-comma-newline-after */
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/* MY STYLES */
+/* ===================================== */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap");
+
+body {
+  background-color: black !important;
+  overflow-x: hidden;
+}
+
+a{
+  color: rgb(252, 115, 245); 
+  transition: 400ms ease;
+}
+a:hover{
+  color:coral; 
+}
+/* ===================================== */
+
+/* NAVBAR */
+.navbar {
+  background-color: black !important;
+}
+
+.dropdown-menu{
+  background-color: coral;
+}
+
+.dropdown-item{
+  color:black; 
+}
+.dropdown-item:hover{
+  background: rgba(21, 3, 82);
+  color:whitesmoke; 
+}
+
+.nav-link {
+  color: white; 
+  width:fit-content;
+}
+/* .navbar-brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+
+  border-radius: 50%;
+} */
+/* ---------------------------- */
+.heading-line{
+  display: inline-block;
+}
+.main-heading {
+  display: block;
+  width:fit-content; 
+}
+.p-logo{
+  object-fit: cover;
+  width:80px;
+  height:80px; 
+  display: block;
+
+}
+/* ---------------------------- */
+
+#header-block {
+  margin-top: 4vh;
+}
+.bg-body-secondary {
+  /* color: rgb(230, 168, 178) !important; */
+  color: white !important;
+  background: rgba(21, 3, 82, 0.38) !important;
+
+  /* border-radius: none !important; */
+  border-radius: 20px !important;
+  border:1px solid rgb(252, 115, 245); 
+  /* border: 2px solid rgb(245, 57, 88) !important; */
+
+}
+/* ---------------------------- */
+
+#about-block {
+  background: rgba(21, 3, 82, 0.38) !important;
+  border: 2px solid coral;
+  /* border:1px solid rgb(252, 115, 245);  */
+
+  margin-bottom:30px; 
+}
+
+/* detailed lists */
+dt {
+  margin-top: 20px;
+}
+/* ---------------------------- */
+
+pre{
+  /* color:green; */
+  color:coral; 
+}
+/* ---------------------------- */
+
+/* side block */
+.list-unstyled h6 {
+  /* color: salmon; */
+  color:white; 
+
+  border-bottom: 30px;
+  font-family: sans-serif;
+  font-weight: 100;
+
+  font-family: "Playfair";
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#right-column {
+  margin-bottom:30px;
+  padding:10px 40px; 
+}
+
+#right-column li{
+  padding:10px; 
+  transition: 300ms ease; 
+}
+#right-column li:hover{
+  background-color: rgb(72, 4, 78);
+}
+
+#right-column img{
+  object-fit: cover;
+  width:100px;
+  height:100px; 
+}
+
+#right-column .text-body-secondary{
+  /* color: rgb(252, 115, 245) !important;  */
+  color: white !important; 
+}
+/* ---------------------------- */
+
+/* FOOTER */
+footer {
+  color:white; 
+  background: coral !important;
+  /* background: rgba(21, 3, 82, 0.38) !important; */
+  padding:10px; 
+}
+
+footer a {
+  border: 1px solid white;
+  /* border:1px solid black; */
+
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  /* color:black;  */
+  color: white;
+}
+footer a:hover {
+  box-sizing: 10px 1px 1px black;
+}
+/* ---------------------------- */
+
+
+/* ===================================== */

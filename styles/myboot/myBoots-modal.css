@@ -1,0 +1,108 @@
+
+/* .modal-content img{
+    border-radius:20px; 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+} */
+
+.modal-content img{
+    border-radius:20px; 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* @media (min-width:1200px) {
+    .modal-content img{
+        height: 300px;
+    }
+    
+} */
+
+/* modal box */
+.modal-content {
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    border-radius: 20px;
+    /* background-color: white; */
+
+    /* From https://css.glass */
+    background: rgba(62, 2, 91, 0.49);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    /* border: 1px solid rgba(62, 2, 91, 0.3); */
+
+    padding:0; 
+}
+/* ------------------------------------- */
+
+.modal-title {
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.modal-body {
+    padding: 0;
+    cursor: pointer;
+}
+
+.modal-footer {
+  border: 0;
+}
+/* ------------------------------------- */
+
+/* buttons */
+.btn-style1 {
+    --color1: rgb(2, 247, 255);  
+
+    margin: 0 10px;
+    padding: 6px 10px; 
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid var(--color1);
+    color: var(--color1);
+
+    transition: 400ms ease; 
+}
+.btn-style1:hover{
+    border: 2px solid var(--color1);
+    background-color: var(--color1);
+    color: black;
+}
+
+
+#btn-download{
+    border-radius:50%; 
+    --color2: rgb(250, 142, 192);  
+    background-color: transparent;
+  
+    border: 2px solid var(--color2);
+    color: var(--color2);
+}
+#btn-download:hover {
+    border: 2px solid var(--color2);
+    background-color: var(--color2);
+    color: rgb(75, 0, 71);
+}
+
+
+.btn-exit {
+    --color3: rgb(255, 47, 19);  
+  background-color: transparent;
+
+  border: 2px solid var(--color3);
+  color: var(--color3);
+}
+.btn-exit:hover {
+    border: 2px solid var(--color3);
+    background-color: var(--color3);
+    color: white;
+}
+/* ------------------------------------- */

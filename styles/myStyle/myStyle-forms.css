@@ -1,0 +1,60 @@
+/* FOR FORMS */
+/* my-input */
+input {
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    transition: 400ms ease;
+}
+
+input::placeholder {
+    color: orange;
+}
+
+input:focus {
+    border-bottom: 1px solid orange;
+}
+/* -------------------- */
+
+/* my-textarea */
+textarea {
+    width: 260px;
+    height: 100px;
+
+    outline: none;
+    font-family: sans-serif;
+    display: block;
+    padding: 10px 5px;
+
+    background: transparent;
+    color: orange;
+    transition: 400ms ease-in;
+}
+
+textarea:hover,
+textarea:focus {
+    border-color: orange;
+}
+/* -------------------- */
+
+
+/* my-button */
+button {
+    border: none;
+    padding:20px;
+    margin: 10px 0;
+    border-radius: 30px;
+    transition: 400ms ease;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: aqua;
+}
+/* ======================================= */

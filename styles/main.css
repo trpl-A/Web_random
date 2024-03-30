@@ -1,0 +1,32 @@
+
+/* for overlay menu */
+.overlay-menu a {
+    transition:none; 
+}
+.overlay-menu a:hover {
+    color:aqua; 
+}
+
+.overlay-menu ul li a {
+    transition: none;
+    font-size: 24px;
+    font-weight: 100;
+    color: #fff;
+    text-decoration: none;
+}
+
+#acknowledgement{
+    font-size: 14px;
+    color:blueviolet; 
+    text-decoration: none;
+}
+#acknowledgement:hover{
+    text-decoration: underline;
+    color:aqua;
+}
+
+/* --------------------------- */
+
+
+
+/* --------------------------- */

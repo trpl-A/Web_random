@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<title>Home</title>
+        <base target="_blank">
+    
+        <!-- favicon -->
+        <link rel="icon" type="icon" href="./styles/favicon/icons8-help-50.png">
+
+        <!-- =============================================== -->
+        <!-- from template -->
+        <!-- STYLES -->
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <!-- SCRIPTS -->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+        <!-- <script src="js/plugins.js"></script> -->
+        <script src="js/main.js"></script>
+        <!-- =============================================== -->
+
+        <!-- typing fx -->
+        <link rel="stylesheet" href="./styles/animate-typing.css">
+
+        <!-- my scripts -->
+        <script src="./scripts/sound.js"></script>
+        <!-- ----------------------->
+        
+        <!-- my styles -->
+        <link rel="stylesheet" href="./styles/main.css">
+        <style>
+            nav{
+                background: transparent;
+            }
+
+            a {
+                color: blueviolet
+            }
+            #acknowledgement{
+                font-size: 14px;
+                color:blueviolet; 
+                text-decoration: none;
+            }
+            #acknowledgement:hover{
+                text-decoration: underline;
+                color:aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- bg music -->
+        <audio src="./sounds/scary-ambience.mp3" autoplay loop></audio>
+
+        <!-- overlay menu -->
+        <section class="overlay-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="gallery-p1.html" onmouseover="playSound()">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page1.html" onmouseover="playSound()">Article #1</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page2.html" onmouseover="playSound()">Article #2</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page3.html" onmouseover="playSound()">Article #3</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page4.html" onmouseover="playSound()">Article #4</a>
+                            </li>
+                            <li>
+                                <a href="desktop-app.html" onmouseover="playSound()">Desktop App</a>
+                            </li>
+                        </ul>
+
+                        <p>Click 'F11' to toggle full-screen mode</p>
+                        <a href="acknowledgement.html" onmouseover="playSound1()">View resources and tools used</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav>
+            <div class="menu-icon">
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- cover -->
+        <div id="video-container">
+            <div class="video-overlay"></div>
+                <div class="video-content">
+                    <div class="inner">
+                        <h1>Welcome to the <em>Arbitrary</em></h1>
+                        <p>A collection of <i>intentional accidents</i></p>
+                        <p><i>(like the Big Bang)</i></p>
+                </div>
+            </div>
+
+            <video autoplay="" loop="" muted>
+                <source src="videos/bg_video.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </body>
+</html>

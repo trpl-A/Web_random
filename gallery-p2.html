@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<title>Gallery | Page 2</title>
+      
+        <!-- favicon -->
+        <link rel="icon" type="icon" href="./styles/favicon/icons8-help-50.png">
+        
+        <!-- from template -->
+        <!-- =============================================== -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+        <!-- =============================================== -->
+
+        
+        <!-- BOOTSTRAP -->
+        <!-- =============================================== -->
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+        <!-- given -->
+        <script src="./styles/assets/js/color-modes.js"></script>
+        <script src="./styles/assets/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="./styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- =============================================== -->
+
+        
+        <!-- my scripts -->
+        <script src="./scripts/modal.js"></script>
+        <script src="./scripts/sound.js"></script>
+        <script src="./scripts/app.js"></script>
+        <!-- ----------------------->
+
+        <!-- my styles -->
+        <link rel="stylesheet" href="./styles/myStyle/myStyle-main.css">
+        <link rel="stylesheet" href="./styles/myStyle/myStyle-classes.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/myboot/myBoots-modal.css">
+
+        <!-- gallery -->
+        <link rel="stylesheet" href="styles/style-gallery.css">
+        <style>
+            header{
+                height:100vh;
+                transition: 400ms ease;
+                background-image: url("./styles/images/g2-cover-main.webp");
+            }
+            @media (max-width: 1000px) {
+                header{
+                    background-image: url("./styles/images/g2-cover-secondary.webp");
+                    background-position: center;
+                }
+            }
+
+            .btn-container{
+                margin:10px 0; 
+            }
+
+            footer a{
+                color: purple;
+                font-weight:500;
+                text-transform: none;
+            }
+            footer a:hover{
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- nav overlay -->
+        <section class="overlay-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html" onmouseover="playSound()">Home</a>
+                            </li>
+                            <li>
+                                <a href="gallery-p1.html" onmouseover="playSound()">Gallery previous...</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page1.html" onmouseover="playSound()" >Article #1</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page2.html" onmouseover="playSound()">Article #2</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page3.html" onmouseover="playSound()"">Article #3</a>
+                            </li>
+                            <li>
+                                <a href="./pages-blog/blog-page4.html" onmouseover="playSound()"">Article #4</a>
+                            </li>
+                            <li>
+                                <a href="desktop-app.html" onmouseover="playSound()">Desktop App</a>
+                            </li>
+                        </ul>
+
+                        <p>Click 'F11' to toggle full-screen mode</p>
+                        <a id="acknowledgement" href="acknowledgement.html" target="_blank" onmouseover="playSound1()">View resources and tools used</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav>
+            <div class="menu-icon">
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <header class="center">
+            <h1>Gallery</h1>
+        </header>
+
+
+        <!-- MODALS, for images -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" 
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> 
+        
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body" onclick="openImage()">
+                    <img id="modal-image" src="" alt="">
+                    </div>
+
+                    <div class="modal-footer">
+                    <!-- <a class="btn-style1" id="btn-download" href="" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                        </svg>
+                    </a> -->
+                    
+                    <!-- <a class="btn-style1" id="btn-download" href="" download>Download</a> -->
+                    <button type="button" onclick="openImage()" class="btn-style1">Open image in new tab</button>
+                    <button type="button" class="btn-style1 btn-exit" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <!-- <main id="main-gallery"> -->
+        <main id="main-gallery" class="center">
+            <div class="album py-3 bg-body-tertiary">
+                <div class="container">
+                    <!-- group1 -->
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <!-- row1 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page2/w3 (40).webp'), 
+                                        setDownloadImage('./styles/images/for_gallery/page2/w3 (40).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page2/w3 (40).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page2/w3 (39).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page2/w3 (39).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page2/w3 (38).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page2/w3 (38).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page2/w3 (37).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page2/w3 (37).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- row2 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/w2/w2 (7).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/w2/w2 (7).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page1/w3 (16).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page1/w3 (16).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page2/w3 (35).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page2/w3 (35).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/page2/w3 (34).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/page2/w3 (34).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- row3 -->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/w2/w2 (10).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/w2/w2 (10).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/w2/w2 (5).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/w2/w2 (5).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/w2/w2 (11).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/w2/w2 (11).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div 
+                                    onclick="changeModalImage1('./styles/images/for_gallery/w2/w2 (9).webp')"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                    <img id="image1" class="bd-placeholder-img card-img-top" 
+                                        src="./styles/images/for_gallery/w2/w2 (9).webp" 
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end--------------------------- -->
+                    </div>
+
+                    <div class="center btn-container">
+                        <a href="./gallery-p1.html" class="btn-style1">Previous page</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p> 
+                <a href="https://github.com/trpl-A" target="_blank">trpl-A</a>
+                &copy; 2024
+            </p>
+        </footer>
+    </body>
+</html>

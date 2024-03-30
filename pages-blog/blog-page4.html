@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+
+    <title>Articles #4 | Flutter</title>
+    <base target="_blank">
+    
+    <!-- favicon -->
+    <link rel="icon" type="icon" href="../styles/favicon/icons8-help-50.png">
+
+    <!-- BOOTSTRAP -->
+    <!-- =============================================== -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/js/color-modes.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--given bootstrap  -->
+    <link href="blog.css" rel="stylesheet">
+    <!-- =============================================== -->
+
+    <!-- my styles -->
+    <style>
+    footer a {
+      color: purple;
+      font-weight: 500;
+      text-transform: none;
+      border:none; 
+      padding:0; 
+    }
+    footer a:hover {
+      color: black;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- nav -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="nav nav-underline navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../gallery-p1.html">Gallery</a>
+                  </li>
+                
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./blog-page1.html">Article 1</a></li>
+                        <li><a class="dropdown-item" href="./blog-page2.html">Article 2</a></li>
+                        <li><a class="dropdown-item" href="./blog-page3.html">Article 3</a></li>
+                        <li><a class="dropdown-item" href="#" target="_self">Article 4</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../desktop-app.html">Desktop App</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="container">
+      <div id="header-block" class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">The world of multi-platform-app builders</h1>
+          <p class="lead my-3">
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row g-5">
+        <!-- main article content -->
+        <div class="col-md-8">
+          <article class="blog-post">
+            <div class="heading-line">
+              <h2 class="display-5 link-body-emphasis mb-1">Flutter</h2>
+              <img class="p-logo" src="./for-blog-page/icons8-flutter-96.png" alt="">
+            </div>
+            <p class="blog-post-meta">22 February 2022 by <a href="#">RFX</a></p>
+
+            <p>
+              Flutter is an open source framework developed and supported by Google. 
+              Frontend and full-stack developers use Flutter to build an 
+              application’s user interface (UI) for multiple platforms with a single codebase.
+            </p>
+
+            <p>
+              When Flutter launched in 2018, it mainly supported mobile app development. 
+              Flutter now supports 
+              application development on six platforms: iOS, Android, 
+              the web, Windows, MacOS, and Linux.
+            </p>
+            
+            <p>
+              What programming language does Flutter use?
+              Flutter uses the open-source programming language Dart, 
+              which was also developed by Google. Dart is optimized for 
+              building UIs, and many of Dart’s strengths are used in Flutter.
+            </p>
+
+            <dl>
+              <dt>Official website</dt>
+              <dd>
+                <a href="https://flutter.dev">https://flutter.dev</a>
+              </dd>
+
+              <dt>Online IDE</dt>
+              <dd>
+                <a href="https://dartpad.dev/">
+                  https://dartpad.dev/
+                </a>
+              </dd>
+        
+              <dt>Get started</dt>
+              <dd>
+                <a href="https://docs.flutter.dev/get-started/install">
+                  https://docs.flutter.dev/get-started/install
+                </a>
+              </dd>
+
+              <dt>Learn</dt>
+              <dd>
+                  <a href="https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0">
+                    https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0
+                  </a>
+              </dd>
+            </dl>
+
+            <pre>
+
+// starter code 
+// main.dart
+              <code>
+import 'package:english_words/english_words.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => MyAppState(),
+      child: MaterialApp(
+        title: 'Namer App',
+        theme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        ),
+        home: MyHomePage(),
+      ),
+    );
+  }
+}
+
+class MyAppState extends ChangeNotifier {
+  var current = WordPair.random();
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var appState = context.watch<MyAppState>();
+
+    return Scaffold(
+      body: Column(
+        children: [
+          Text('A random idea:'),
+          Text(appState.current.asLowerCase),
+        ],
+      ),
+    );
+  }
+}
+              </code>
+            </pre>
+          </article>
+        </div>
+
+        <!-- right column -->
+        <div id="right-column" class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+            <!-- blog pages -->
+            <div>
+              <h4 class="fst-italic">Other blog pages</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" 
+                    href="./blog-page1.html">
+                    
+                    <img class="bd-placeholder-img" 
+                      src="./for-blog-page/icons8-kotlin-96.png" alt=""
+                      width="100%" height="96">
+
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Kotlin</h6>
+                      <small class="text-body-secondary">22 February 2024</small>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" 
+                    href="./blog-page2.html">
+
+                    <img class="bd-placeholder-img" src="./for-blog-page/icons8-android-logo-96.png" alt=""
+                    width="100%" height="96">
+
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Android development</h6>
+                      <small class="text-body-secondary">January 14, 2023</small>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" 
+                    href="./blog-page3.html">
+
+                    <img class="bd-placeholder-img" src="./for-blog-page/icons8-dart-96.png" alt=""
+                    width="100%" height="96">
+
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Dart</h6>
+                      <small class="text-body-secondary">January 13, 2023</small>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="text-center">
+      <p>
+        <a href="https://github.com/trpl-A" target="_blank">trpl-A</a>
+        &copy; 2024
+      </p>
+    </footer>
+  </body>
+</html>

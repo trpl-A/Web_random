@@ -29,13 +29,11 @@ Note: Used a web template
 ## Screenshots
 
 ![Screenshot of the home page](()screenshots/sshot-home.webp "Home page")
-
 ![Screenshot of the gallery page](./()screenshots/sshot-gallery.webp "Gallery page")
 
 ![Screenshot one of the article pages](./()screenshots/sshot-article.webp)
 
 ![Desktop application](./()screenshots/sshot-app.webp)
 
-![Acknowledgements](/()screenshots\sshot-ackn.webp)  
-
+![Acknowledgements](./()screenshots\sshot-ackn.webp)  
 ---
